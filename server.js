@@ -7,7 +7,7 @@ const app = express();
 // Connect Database
 connectDB();
 
-// Init Middleware
+// Init Middleware to enable bodyparser as now it come by defualt in express
 app.use(express.json());
 
 // Define Routes

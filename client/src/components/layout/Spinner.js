@@ -8,6 +8,7 @@ const Spinner = () => (
       style={{ width: '200px', margin: 'auto', display: 'block' }}
       alt="Loading..."
     />
+    <center><p>Loading Data</p></center>
   </Fragment>
 );
 

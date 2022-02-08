@@ -94,7 +94,8 @@ Register.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
+  // here we can access the auth.js file and access the isAuthenticated prop from there.
   isAuthenticated: state.auth.isAuthenticated
 });
-
+// the setAlert,register are the actions fucntions
 export default connect(mapStateToProps, { setAlert, register })(Register);

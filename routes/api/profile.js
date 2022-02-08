@@ -127,6 +127,7 @@ router.get(
 
       return res.json(profile);
     } catch (err) {
+      // demo code for objectID does not exist if(err.kind==="ObjectId") {}
       console.error(err.message);
       return res.status(500).json({ msg: 'Server error' });
     }
@@ -174,8 +175,8 @@ router.put(
     try {
       const profile = await Profile.findOne({ user: req.user.id });
 
-      profile.experience.unshift(req.body);
-
+      profile.experience.unshift(req.body); //unshift is similar to push
+      console.log(profile);
       await profile.save();
 
       res.json(profile);

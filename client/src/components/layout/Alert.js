@@ -17,6 +17,9 @@ Alert.propTypes = {
 };
 
 const mapStateToProps = (state) => ({
+  // it return the alert file state which is location in reducer/alert
+  // we can access there anythingn other than the whole state with ///state.alert.objectName
+  // now we can recive the alert in componenet props and can access inside the component
   alerts: state.alert
 });
 
